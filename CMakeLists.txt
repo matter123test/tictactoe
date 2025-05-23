@@ -6,13 +6,13 @@ set(CMAKE_CXX_STANDARD 20)
 # Generate compile_commands.json
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# To hide the window
+# To hide the console window
 if (WIN32)
     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -mwindows")
 endif()
 
 # Dependencies
-# Raylib
+
 set(RAYLIB_VERSION 5.5)
 find_package(raylib ${RAYLIB_VERSION} QUIET) # QUIET or REQUIRED
 if (NOT raylib_FOUND) # If there's none, fetch and build raylib
@@ -29,8 +29,6 @@ if (NOT raylib_FOUND) # If there's none, fetch and build raylib
     set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE) # don't build the supplied examples
   endif()
 endif()
-
-include(FetchContent)
 
 FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.12.0/json.tar.xz)
 FetchContent_MakeAvailable(json)
