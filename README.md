@@ -13,7 +13,7 @@ This project uses [raylib](https://github.com/raysan5/raylib)
 You will need:
 
 - A modern C/C++ compiler
-- CMake 3.24+ installed
+- CMake 3.11+ installed
 
 ### Building The Project
 
