@@ -1,6 +1,6 @@
 ## Tic Tac Toe
 
-This is basic tic tac toe game written in C++
+Simple tic tac toe game written in C++
 
 ## Libraries
 
