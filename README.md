@@ -4,7 +4,8 @@ This is basic tic tac toe game written in C++
 
 ## Libraries
 
-This project uses [raylib](https://github.com/raysan5/raylib)
+[raylib](https://github.com/raysan5/raylib)
+[nlohmann::json](https://github.com/nlohmann/json)
 
 ## Usage
 
